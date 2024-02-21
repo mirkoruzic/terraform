@@ -78,7 +78,7 @@ If you haven't already, create an S3 bucket in AWS to store your Terraform state
   
   eg. 
   ```
-  cd aws/project_abc/aws/environment/dev/networking
+  cd aws/project_abc/environment/dev/networking
   ```
   make sure to export Terraform credentials first
 
@@ -90,7 +90,7 @@ If you haven't already, create an S3 bucket in AWS to store your Terraform state
   
   eg. 
   ```
-  cd aws/project_abc/aws/environment/dev/secrets
+  cd aws/project_abc/environment/dev/secrets
   ```
   make sure to export Terraform credentials first
 
@@ -102,7 +102,7 @@ If you haven't already, create an S3 bucket in AWS to store your Terraform state
   
   eg. 
   ```
-  cd aws/project_abc/aws/environment/dev/db
+  cd aws/project_abc/environment/dev/db
   ```
   make sure to export Terraform credentials first
 
@@ -114,7 +114,7 @@ If you haven't already, create an S3 bucket in AWS to store your Terraform state
   
   eg. 
   ```
-  cd aws/project_abc/aws/environment/dev/application
+  cd aws/project_abc/environment/dev/application
   ```
   make sure to export Terraform credentials first
 
