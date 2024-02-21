@@ -1,6 +1,5 @@
 # Terraform Cloud Infrastructure
 
-
 This project serves as a sophisticated blueprint illustrating a multi-layered approach to cloud infrastructure deployment using the Terraform framework. The project is organized into 2 distinct subprojects and based principles are on Terraform layering.
 
 # Architecture 
