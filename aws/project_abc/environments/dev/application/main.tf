@@ -1,8 +1,8 @@
 data "terraform_remote_state" "network" {
   backend = "s3"
   config = {
-    bucket = "abc-tfstate-bucket"
-    key    = "state/environment/dev/network/terraform.tfstate"
+    bucket = "[SET_S3_BUCKET_FOR_TF_STATE]"  # Replace with your Terraform S3 TFState bucket
+    key    = "state/environment/${var.env}/network/terraform.tfstate"
     region = "eu-west-1"
     encrypt = true
   }
@@ -11,8 +11,8 @@ data "terraform_remote_state" "network" {
 data "terraform_remote_state" "secrets" {
   backend = "s3"
   config = {
-    bucket = "abc-tfstate-bucket"
-    key    = "state/environment/dev/secrets/terraform.tfstate"
+    bucket = "[SET_S3_BUCKET_FOR_TF_STATE]"  # Replace with your Terraform S3 TFState bucket
+    key    = "state/environment/${var.env}/secrets/terraform.tfstate"
     region = "eu-west-1"
     encrypt = true
   }
@@ -21,8 +21,8 @@ data "terraform_remote_state" "secrets" {
 data "terraform_remote_state" "db" {
   backend = "s3"
   config = {
-    bucket = "abc-tfstate-bucket"
-    key    = "state/environment/dev/db/terraform.tfstate"
+    bucket = "[SET_S3_BUCKET_FOR_TF_STATE]"  # Replace with your Terraform S3 TFState bucket
+    key    = "state/environment/${var.env}/db/terraform.tfstate"
     region = "eu-west-1"
     encrypt = true
   }
