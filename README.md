@@ -74,8 +74,10 @@ If you haven't already, create an S3 bucket in AWS to store your Terraform state
 
   ### 3.1  Network needs to be setup first!
   
-  eg. cd project_abc/aws/environment/dev/networking
-
+  eg. 
+  ```
+  cd project_abc/aws/environment/dev/networking
+  ```
   make sure to export Terraform credentials first
 
  - terraform init
@@ -84,8 +86,10 @@ If you haven't already, create an S3 bucket in AWS to store your Terraform state
  
   ### 3.2  Apply the secrets
   
-  eg. cd project_abc/aws/environment/dev/secrets
-
+  eg. 
+  ```
+  cd project_abc/aws/environment/dev/secrets
+  ```
   make sure to export Terraform credentials first
 
  - terraform init
@@ -94,8 +98,10 @@ If you haven't already, create an S3 bucket in AWS to store your Terraform state
 
   ### 3.3  Create DB RDS MySQL
   
-  eg. cd project_abc/aws/environment/dev/db
-
+  eg. 
+  ```
+  cd project_abc/aws/environment/dev/db
+  ```
   make sure to export Terraform credentials first
 
  - terraform init
@@ -104,8 +110,10 @@ If you haven't already, create an S3 bucket in AWS to store your Terraform state
 
   ### 3.4  Create ECS Fargate
   
-  eg. cd project_abc/aws/environment/dev/application
-
+  eg. 
+  ```
+  cd project_abc/aws/environment/dev/application
+  ```
   make sure to export Terraform credentials first
 
  - terraform init
