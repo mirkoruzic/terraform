@@ -68,9 +68,8 @@ If you haven't already, create an S3 bucket in AWS to store your Terraform state
 
 - Configure the Terraform Backend:
 
-  In your Terraform configuration file (e.g. environment/dev/networking/backend.tf or within the terraform block of your main configuration), replace [SET_S3_BUCKET_FOR_TF_STATE] with the name of the S3 bucket you created.
+  - Create TF_STATE S3 bucket otside of terraform with the name "project-abc-tfstate-bucket". Here tfstate file will be stored for each layer.
 
-  This needs to be done for all layers in environment because each layer per environment has it own TF_STATE file
 
 3. **Run code from Network layer first**: go to dev/ or prod/ directory and apply the code from Network layer first. 
 
