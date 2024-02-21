@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-    bucket = "[SET_S3_BUCKET_FOR_TF_STATE]"  # Replace with your S3 bucket name
+    bucket = [SET_S3_BUCKET_FOR_TF_STATE]  # Replace with your S3 bucket name
     key    = "state/environment/prod/network/terraform.tfstate"
     region = "eu-west-1"
     encrypt    = true
