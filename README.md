@@ -27,25 +27,27 @@ The infrastructure is architected to provide a resilient, scalable, and secure e
 
 ## ASCII representation of the project structure
 
-aws/
-├── project_abc/
-│ ├── modules/
-│ │ ├── vpc/
-│ │ ├── ecs/
-│ │ ├── rds/
-│ │ ├── sec_groups/
-│ │ └── aws_secret_manager/
-│ └── environments/
-│ ├── dev/
-│ │ ├── application/
-│ │ ├── db/
-│ │ ├── network/
-│ │ └── secrets/
-│ └── prod/
-│ ├── application/
-│ ├── db/
-│ ├── network/
-│ └── secrets/
+```
+├── aws
+├─── project_abc
+├──── modules
+│   ├─── vpc
+│   ├─── ecs
+│   ├─── rds
+│   ├─── sec_groups
+│   └── ─aws_secret_manager
+└─── environments
+    ├─── dev
+    │   ├─── application
+    │   ├─── db
+    │   ├─── network
+    │   └─── secrets
+    └─── prod
+        ├─── application
+        ├─── db
+        ├─── network
+        └─── secrets
+```
 
 ## Modules
 
