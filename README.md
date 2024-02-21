@@ -37,15 +37,15 @@ The infrastructure is architected to provide a resilient, scalable, and secure e
 │   └── ─aws_secret_manager
 └─── environments
     ├─── dev
-    │   ├─── application ──────LAYER─────> terraform.tfstate
-    │   ├─── db          ──────LAYER─────> terraform.tfstate
-    │   ├─── network     ──────LAYER─────> terraform.tfstate
-    │   └─── secrets     ──────LAYER─────> terraform.tfstate
+    │   ├─── network     ────── LAYER 1 ─────> terraform.tfstate
+    │   ├─── secrets     ────── LAYER 2 ─────> terraform.tfstate
+    │   ├─── db          ────── LAYER 3 ─────> terraform.tfstate
+    │   └─── applicaton  ────── LAYER 4 ─────> terraform.tfstate
     └─── prod
-        ├─── application ──────LAYER─────> terraform.tfstate
-        ├─── db          ──────LAYER─────> terraform.tfstate
-        ├─── network     ──────LAYER─────> terraform.tfstate
-        └─── secrets     ──────LAYER─────> terraform.tfstate
+        ├─── network     ────── LAYER 1 ─────> terraform.tfstate
+        ├─── secrets     ────── LAYER 2 ─────> terraform.tfstate
+        ├─── db          ────── LAYER 3 ─────> terraform.tfstate
+        └─── applicaton  ────── LAYER 4 ─────> terraform.tfstate
 ```
 
 ## Modules
